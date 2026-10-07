@@ -1,0 +1,143 @@
+.Animation{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    animation: Tran6 3s ease-in-out 0.5s backwards infinite;
+}
+
+.firstAnimation{
+    position: relative;
+    width: 10vh;
+    height: 10vh;
+    background-color: blue;
+    animation: Tran1 2s ease-in-out 0.5s infinite;
+}
+.secondAnimation{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: Tran2 2s ease-in-out 0.5s infinite;
+}
+.thirdAnimation{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    animation: Tran3 2s ease-in-out .5s infinite;
+}
+.fourthAnimation{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background-color: gray;
+    animation: Tran4 10s ease-in-out 0.5s infinite normal;
+}
+.fifthAnimation{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    animation: Tran5 3s ease-in-out 0.5s backwards infinite;
+}
+
+
+@keyframes Tran1 {
+    0%{
+        transform: translateX(0%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(1000%);
+        opacity: 2;
+    }
+}
+@keyframes Tran2 {
+    0%{
+        transform: translateY(0%);
+        opacity: 2;
+    }
+    100%{
+        transform: translateY(1000%);
+        opacity: 0;
+    }
+}
+@keyframes Tran3 {
+    0%{
+        transform: translateX(0%);
+        opacity: 0;
+    }
+
+    20%{
+        transform: translateY(-50%);
+        opacity: 1;
+    }
+    40%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    60%{
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    
+    80%{
+        transform: translateX(100%);
+        opacity: 1;
+    }
+
+    100%{
+        transform: translateX(-1000%);
+        opacity: 1;
+    }
+}
+@keyframes Tran4 {
+    0%{
+        transform: translateX(0%);
+        opacity: 0;
+    }
+    25%{
+        transform: translateY(100%);
+        opacity: 1;
+    }
+    50%{
+        transform: translateX(1000%);
+        opacity: 1;
+    }
+    75%{
+        transform: translateY(10%);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+@keyframes Tran5 {
+    0%{
+        transform: translateX(0%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(-500%);
+        background-color: brown;
+        opacity: 2;
+    }
+}
+@keyframes Tran6 {
+    0%{
+        transform: scaleX(100px);
+        background-color: red;
+    }
+
+    100%{
+        transform: scaleX(-10);
+        background-color: blue;
+}
+}
+
+@media (max-width: 768px) {
+    div{
+        background-color: white;
+    }
+}
