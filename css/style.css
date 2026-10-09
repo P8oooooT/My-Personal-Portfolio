@@ -393,7 +393,7 @@ main .hero .hero-inner .mydetails p {
 
 .about .about-inner a{
     text-decoration: none;
-    color: var(--primaryColor);
+    color: var(--accentColor);
     transition: 0.5s;
     background-color: var(--primaryColor);
     padding: clamp(10px, 15%, 15px);
